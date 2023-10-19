@@ -84,6 +84,8 @@ app.get('/', (req, res) => {
   res.send('Test message: Server is working!');
 });
 
+app.options('/participants', cors());
+
 // Create a new participant record
 app.post('/participants', upload.fields([
   {name: 'aadharCard'},
