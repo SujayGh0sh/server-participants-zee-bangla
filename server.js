@@ -14,8 +14,8 @@ const PORT = process.env.PORT || 8005; // You can change the port number as need
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-        origin: '*',  // Allow requests from this origin
-         credentials: true, // Allow credentials (e.g., cookies, authorization headers)
+        origin: 'https://www.zeebanglamuktomancho.com',  // Allow requests from this origin
+        credentials: true, // Allow credentials (e.g., cookies, authorization headers)
        }));
 
        
