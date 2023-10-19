@@ -79,6 +79,11 @@ app.use(morgan('tiny'));
 // Middleware to parse JSON data
 app.use(bodyParser.json());
 
+//test server is working
+app.get('/', (req, res) => {
+  res.send('Test message: Server is working!');
+});
+
 // Create a new participant record
 app.post('/participants', upload.fields([
   {name: 'aadharCard'},
